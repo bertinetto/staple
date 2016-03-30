@@ -16,7 +16,7 @@ For questions about the code or the paper, feel free contact the first two autho
 ###Format
 For `runTracker(sequence, start_frame)`, make sure the directory tree looks like the following:
 
-    - staple/ (tracker)
+    - staple/
         - runTracker.m
         - thisTracker.m
         - ... 
@@ -27,21 +27,20 @@ For `runTracker(sequence, start_frame)`, make sure the directory tree looks like
         - (any other sequence with the specified format)
 
 Each sequence folder should have the following structure
-- <sequence_name>/
+- `<sequence_name>`/
     - imgs/
         - 00000000.jpg (must be 8digit, any img format allowed)
         - 00000001.jpg
         - ...
     - groundtruth.txt
-    - <sequence_name>_frames.txt
+    - `<sequence_name>`_frames.txt
 
-* <sequence_name>_frames.txt contains the interval of frames to track
-* groundtruth.txt contains the per frame annotation. The ground truth bounding box can be expressed as a polygon, i.e. <x1>,<y1>,<x2>,<y2>,<x3>,<y3>,<x4>,<y4>, or as an axis-aligned bounding box, i.e.<top-x><top-y><width><height>
+* `<sequence_name>`_frames.txt contains the interval of frames to track
+* groundtruth.txt contains the per frame annotation. The ground truth bounding box can be expressed as a polygon, i.e. `<x1>,<y1>,<x2>,<y2>,<x3>,<y3>,<x4>,<y4>`, or as an axis-aligned bounding box, i.e.`<top-x><top-y><width><height>`
 
 ###F.A.Q.
 > How can I reproduce the exact same results of the paper?
 
-Simply checkout the code at the tag `<cvpr16_results>`, other commits and future versions might perform differently.
-
+Checkout the code at the commit tagged `cvpr16_results`, other commits and future versions might perform differently.
 As it is stated in the paper, the performance have been obtained using the last commit of the [VOT toolkit](https://github.com/votchallenge/vot-toolkit) available at the time of the paper submission (`d3b2b1d`).
 
