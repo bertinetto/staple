@@ -1,24 +1,22 @@
 # Staple tracker
-Code of the paper "Staple: Complementary Learners for Real-Time Tracking", by Luca Bertinetto, Jack Valmadre, Stuart Golodetz, Ondra Miksik and Philip Torr (University of Oxford) - to appear at CVPR 2016.
+Code of the paper "Staple: Complementary Learners for Real-Time Tracking", by Luca Bertinetto, Jack Valmadre, Stuart Golodetz, Ondrej Miksik and Philip Torr (University of Oxford) - to appear at CVPR 2016.
 
 ###Contacts
-For questions about the code or the paper, feel free contact the first two authors at `eng` dot `ox` dot `ac` dot `uk`.
-
-You can find more info at the project page: http://robots.ox.ac.uk/~luca/staple.html
+For questions about the code or the paper, feel free contact the first two authors at `eng` dot `ox` dot `ac` dot `uk. You can find more info at the project page: http://robots.ox.ac.uk/~luca/staple.html
 
 ###Prerequisites
  - The code is mostly in MATLAB, except the workhorse of `fhog.m`, which is written in C and comes from Piotr Dollar toolbox http://vision.ucsd.edu/~pdollar/toolbox
- - gradientMex has already been compiled and tested on ubuntu and windows 8 (64 bit). You can easily recompile the sources in case of need.
+ - gradientMex and mexResize have been compiled and tested for Ubuntu and Windows 8 (64 bit). You can easily recompile the sources in case of need.
 
 ###Modes
-* `<runTracker(sequence, start_frame)>` runs the tracker on `<sequence>` from `<start_frame`> onwards.
-* `<runTracker_webcam>` starts an interactive webcam demo. The visualization requires MATLAB Computer Vision Toolbox, please email me if you want to try the demo without the toolbox.
-* `<runTracker_VOT>` and `<run_Staple>` run the tracker within the benchmarks.VOT* and OTB respectively.
+* `runTracker(sequence, start_frame)` runs the tracker on `sequence` from `start_frame` onwards.
+* `runTracker_webcam` starts an interactive webcam demo. The visualization requires MATLAB Computer Vision Toolbox, please email me if you want to try the demo without the toolbox.
+* `runTracker_VOT` and `run_Staple` run the tracker within the benchmarks. VOT and OTB respectively.
 
 ###Format
- Be sure the directory tree is the following:
+For `runTracker(sequence, start_frame)`, make sure the directory tree looks like the following:
 
-    - Staple/ (tracker)
+    - staple/ (tracker)
         - runTracker.m
         - thisTracker.m
         - ... 
@@ -37,12 +35,8 @@ Each sequence folder should have the following structure
     - groundtruth.txt
     - <sequence_name>_frames.txt
 
-* <sequence_name>_frames.txt* contains the interval of frames to track
-* groundtruth.txt contains the per frame annotation.
-The ground truth bounding box can be expressed as a polygon, i.e.
-<x1>,<y1>,<x2>,<y2>,<x3>,<y3>,<x4>,<y4>
-or as an axis-aligned bounding box, i.e.
-<top-x><top-y><width><height>
+* <sequence_name>_frames.txt contains the interval of frames to track
+* groundtruth.txt contains the per frame annotation. The ground truth bounding box can be expressed as a polygon, i.e. <x1>,<y1>,<x2>,<y2>,<x3>,<y3>,<x4>,<y4>, or as an axis-aligned bounding box, i.e.<top-x><top-y><width><height>
 
 ###F.A.Q.
 > How can I reproduce the exact same results of the paper?
