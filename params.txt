@@ -1,0 +1,30 @@
+% CONFIGURATION FILE
+% every entry is converted into a field of the struct params in readParams.m
+
+params.grayscale_sequence = false;	% suppose that sequence is colour
+params.hog_cell_size = 4;
+params.fixed_area = 150^2;           % standard area to which we resize the target
+params.n_bins = 2^5;                            % number of bins for the color histograms (bg and fg models)
+params.learning_rate_pwp = 0.04;           % bg and fg color models learning rate 
+params.feature_type = 'fhog';
+%         params.feature_type = 'gray';
+params.inner_padding = 0.2;             % defines inner area used to sample colors from the foreground
+params.output_sigma_factor = 1/16 ;             % standard deviation for the desired translation filter output
+params.lambda = 1e-3;                                   % regularization weight
+params.learning_rate_cf = 0.01;            % HOG model learning rate
+params.merge_factor = 0.3;              % fixed interpolation factor - how to linearly combine the two responses
+params.merge_method = 'const_factor';
+params.den_per_channel = false;
+
+%% scale related
+params.scale_adaptation = true;
+params.hog_scale_cell_size = 4;                % Default DSST=4
+params.learning_rate_scale = 0.025;
+params.scale_sigma_factor = 1/4;
+params.num_scales = 33;
+params.scale_model_factor = 1.0;
+params.scale_step = 1.02;
+params.scale_model_max_area = 32*16;
+%% debugging stuff
+params.visualization = 0;                               % show output bbox on frame
+params.visualization_dbg = 0;                           % show also segmentation, desired response and filter output

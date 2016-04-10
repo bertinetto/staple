@@ -1,0 +1,4 @@
+(webcam)
+* unify logic with runTracker
+* flip on the vertical dimension
+* allow use without Vision toolbox
