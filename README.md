@@ -1,15 +1,24 @@
 # Staple tracker
-Code of the paper **Staple: Complementary Learners for Real-Time Tracking**, by Luca Bertinetto, Jack Valmadre, Stuart Golodetz, Ondrej Miksik and Philip Torr (University of Oxford) - to appear at CVPR 2016.
+Code of the paper **Staple: Complementary Learners for Real-Time Tracking**, by Luca Bertinetto, Jack Valmadre, Stuart Golodetz, Ondrej Miksik and Philip Torr (University of Oxford) - to appear in CVPR 2016.
 
 ###Contacts
 For questions about the code or the paper, feel free contact us.
 You can find more info at the project page: http://robots.ox.ac.uk/~luca/staple.html
 
+Please cite
+```
+@article{bertinetto2015staple,
+  title={Staple: Complementary Learners for Real-Time Tracking},
+  author={Bertinetto, Luca and Valmadre, Jack and Golodetz, Stuart and Miksik, Ondrej and Torr, Philip},
+  journal={arXiv preprint arXiv:1512.01355},
+  year={2015}
+}
+```
+
 ###Prerequisites
  - The code is mostly in MATLAB, except the workhorse of `fhog.m`, which is written in C and comes from Piotr Dollar toolbox http://vision.ucsd.edu/~pdollar/toolbox
  - gradientMex and mexResize have been compiled and tested for Ubuntu and Windows 8 (64 bit). You can easily recompile the sources in case of need.
  - To use the webcam mode (`runTracker_webcam`), install MATLAB's webcam support from http://mathworks.com/hardware-support/matlab-webcam.html
-
 
 ###Modes
 * `runTracker(sequence, start_frame)` runs the tracker on `sequence` from `start_frame` onwards.
