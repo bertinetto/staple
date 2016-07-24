@@ -7,11 +7,13 @@ You can find more info at the project page: http://robots.ox.ac.uk/~luca/staple.
 
 Please cite
 ```
-@article{bertinetto2015staple,
-  title={Staple: Complementary Learners for Real-Time Tracking},
-  author={Bertinetto, Luca and Valmadre, Jack and Golodetz, Stuart and Miksik, Ondrej and Torr, Philip},
-  journal={arXiv preprint arXiv:1512.01355},
-  year={2015}
+
+@InProceedings{Bertinetto_2016_CVPR,
+author = {Bertinetto, Luca and Valmadre, Jack and Golodetz, Stuart and Miksik, Ondrej and Torr, Philip H. S.},
+title = {Staple: Complementary Learners for Real-Time Tracking},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2016}
 }
 ```
 
