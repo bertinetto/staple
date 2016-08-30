@@ -1,5 +1,5 @@
 # Staple tracker
-Code of the paper **Staple: Complementary Learners for Real-Time Tracking**, by Luca Bertinetto, Jack Valmadre, Stuart Golodetz, Ondrej Miksik and Philip Torr (University of Oxford) - to appear in CVPR 2016.
+Code for the method described in the paper **Staple: Complementary Learners for Real-Time Tracking**, by Luca Bertinetto, Jack Valmadre, Stuart Golodetz, Ondrej Miksik and Philip Torr (University of Oxford) - appeared at CVPR 2016.
 
 ###Contacts
 For questions about the code or the paper, feel free contact us.
