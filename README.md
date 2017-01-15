@@ -19,7 +19,6 @@ year = {2016}
 
 ###Prerequisites
  - The code is mostly in MATLAB, except the workhorse of `fhog.m`, which is written in C and comes from Piotr Dollar toolbox http://vision.ucsd.edu/~pdollar/toolbox
- - gradientMex and mexResize have been compiled and tested for Ubuntu and Windows 8 (64 bit). You can easily recompile the sources in case of need. I have compiled mexResize following the instructions in Martin's old code for DSST. You can find it here http://www.cvl.isy.liu.se/research/objrec/visualtracking/scalvistrack/index.html Just open the archive and run compilemex.m or compilemex_win.m
  - To use the webcam mode (`runTracker_webcam`), install MATLAB's webcam support from http://mathworks.com/hardware-support/matlab-webcam.html
 
 ###Modes
@@ -53,6 +52,11 @@ Each sequence folder should have the following structure
 * groundtruth.txt contains the per frame annotation. The ground truth bounding box can be expressed as a polygon, i.e. `<x1>,<y1>,<x2>,<y2>,<x3>,<y3>,<x4>,<y4>`, or as an axis-aligned bounding box, i.e.`<top-x>,<top-y>,<width>,<height>`
 
 ###F.A.Q.
+
+> How can I compile `mexResize` ?
+`gradientMex` and `mexResize` have been compiled and tested for Ubuntu and Windows 8 (64 bit). You can easily recompile the sources in case of need. I have compiled mexResize following the instructions in Martin's old code for DSST. You can find it here http://www.cvl.isy.liu.se/research/objrec/visualtracking/scalvistrack/index.html - just open the archive and run compilemex.m or compilemex_win.m
+
+
 > How can I reproduce the exact same results of the paper?
 
 Checkout the code at the commit tagged `cvpr16_results`, other commits and future versions might perform differently.
