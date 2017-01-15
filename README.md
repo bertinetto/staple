@@ -19,7 +19,7 @@ year = {2016}
 
 ###Prerequisites
  - The code is mostly in MATLAB, except the workhorse of `fhog.m`, which is written in C and comes from Piotr Dollar toolbox http://vision.ucsd.edu/~pdollar/toolbox
- - gradientMex and mexResize have been compiled and tested for Ubuntu and Windows 8 (64 bit). You can easily recompile the sources in case of need.
+ - gradientMex and mexResize have been compiled and tested for Ubuntu and Windows 8 (64 bit). You can easily recompile the sources in case of need. I have compiled mexResize following the instructions in Martin's old code for DSST. You can find it here http://www.cvl.isy.liu.se/research/objrec/visualtracking/scalvistrack/index.html Just open the archive and run compilemex.m or compilemex_win.m
  - To use the webcam mode (`runTracker_webcam`), install MATLAB's webcam support from http://mathworks.com/hardware-support/matlab-webcam.html
 
 ###Modes
