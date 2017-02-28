@@ -54,7 +54,7 @@ Each sequence folder should have the following structure
 ###F.A.Q.
 
 > How can I compile `mexResize` ?
-`gradientMex` and `mexResize` have been compiled and tested for Ubuntu and Windows 8 (64 bit). You can easily recompile the sources in case of need. I have compiled mexResize following the instructions in Martin's old code for DSST. You can find it here http://www.cvl.isy.liu.se/research/objrec/visualtracking/scalvistrack/index.html - just open the archive and run compilemex.m or compilemex_win.m
+`gradientMex` and `mexResize` have been compiled and tested for Ubuntu, Windows 8 (64 bit) and macOS(Sierra). You can easily recompile the sources in case of need. I have compiled mexResize following the instructions in Martin's old code for DSST. You can find it here http://www.cvl.isy.liu.se/research/objrec/visualtracking/scalvistrack/index.html - just open the archive and run compilemex.m or compilemex_win.m
 
 
 > How can I reproduce the exact same results of the paper?
