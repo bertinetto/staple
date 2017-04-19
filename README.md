@@ -60,5 +60,5 @@ Each sequence folder should have the following structure
 > How can I reproduce the exact same results of the paper?
 
 Checkout the code at the commit tagged `cvpr16_results`, other commits and future versions might perform differently.
-As it is stated in the paper, the performance have been obtained using the last commit of the [VOT toolkit](https://github.com/votchallenge/vot-toolkit) available at the time of the paper submission (`d3b2b1d`).
+As it is stated in the paper, the performance have been obtained using the last commit of the [VOT toolkit](https://github.com/votchallenge/vot-toolkit) available at the time of the paper submission ([`d3b2b1d`](https://github.com/votchallenge/vot-toolkit/tree/d3b2b1d)).
 
