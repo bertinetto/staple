@@ -1,3 +1,5 @@
+<b>NEWS!</b> Check out our [CVPR'17 paper+code](http://www.robots.ox.ac.uk/~luca/cfnet.html): training a Correlation Filter end-to-end allows super lightweight networks of 2 layers (600 kB) to achieve state-of-the-art performance at high-speed.
+
 # Staple tracker
 Code for the method described in the paper **Staple: Complementary Learners for Real-Time Tracking**, by Luca Bertinetto, Jack Valmadre, Stuart Golodetz, Ondrej Miksik and Philip Torr (University of Oxford) - appeared at CVPR 2016.
 
